@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nc_test4\tst_coords.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nc_test4\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A522C833-7C7C-3C54-B964-1823C5482EB1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

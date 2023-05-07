@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\add.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\atttests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\cdftests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\dimtests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\emalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\misctest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\rec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\slabs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\val.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\vardef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\varget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\vargetg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\varput.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\varputg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\vartests.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\vputget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\vputgetg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nctest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A522C833-7C7C-3C54-B964-1823C5482EB1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16ECEDA7-7307-35D9-AB5F-CED027F57499}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>nc_test4_tst_files</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nc_test4_tst_files.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nc_test4_tst_files</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nc_test4_tst_files.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nc_test4_tst_files</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nc_test4_tst_files.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nc_test4_tst_files</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nc_test4_tst_files.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nc_test4_tst_files</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;..\liblib\Debug\netcdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/Debug/nc_test4_tst_files.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/nc_test4_tst_files.pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;..\liblib\Release\netcdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/Release/nc_test4_tst_files.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/nc_test4_tst_files.pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;..\liblib\MinSizeRel\netcdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/MinSizeRel/nc_test4_tst_files.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/MinSizeRel/nc_test4_tst_files.pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\include;N:\Development\Dev_Base\netcdf-c-4.9.2\include;N:\Development\Dev_Base\netcdf-c-4.9.2\oc2;N:\Development\Dev_Base\netcdf-c-4.9.2\libsrc;N:\Development\Dev_Base\hdf-4.2.16\mfhdf\libsrc;N:\Development\Dev_Base\jpeg-9c;N:\Development\Dev_Base\hdf5-1.14.0\src;N:\Development\Dev_Base\curl-7.86.0\include;N:\Development\Dev_Base\zlib-1.2.11;N:\Development\Dev_Base\netcdf-c-4.9.2\msvc;N:\Development\Dev_Base\netcdf-c-4.9.2\ncdump;N:\Development\Dev_Base\netcdf-c-4.9.2\h5_test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;..\liblib\RelWithDebInfo\netcdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\mfhdf.lib;N:\Development\Dev_Base\hdf-4.2.16\msvc\vc143\x64\vs2022_Release\hdf.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_cpp.lib;N:\Development\Dev_Base\hdf5-1.14.0\msvc\vc143\x64\vs2022_Release\hdf5_hl_cpp.lib;N:\Development\Dev_Base\zlib-1.2.11\vc143\x64\vs2022_Release\zlib.lib;N:\Development\Dev_Base\curl-7.86.0\msvc\msvc\vc143\X64\vs2022_Release\libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/RelWithDebInfo/nc_test4_tst_files.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/RelWithDebInfo/nc_test4_tst_files.pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nc_test4\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule N:/Development/Dev_Base/netcdf-c-4.9.2/nc_test4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/netcdf-c-4.9.2 -BN:/Development/Dev_Base/netcdf-c-4.9.2/msvc --check-stamp-file N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule N:/Development/Dev_Base/netcdf-c-4.9.2/nc_test4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/netcdf-c-4.9.2 -BN:/Development/Dev_Base/netcdf-c-4.9.2/msvc --check-stamp-file N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule N:/Development/Dev_Base/netcdf-c-4.9.2/nc_test4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/netcdf-c-4.9.2 -BN:/Development/Dev_Base/netcdf-c-4.9.2/msvc --check-stamp-file N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule N:/Development/Dev_Base/netcdf-c-4.9.2/nc_test4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/netcdf-c-4.9.2 -BN:/Development/Dev_Base/netcdf-c-4.9.2/msvc --check-stamp-file N:/Development/Dev_Base/netcdf-c-4.9.2/msvc/nc_test4/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\nc_test4\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="N:\Development\Dev_Base\netcdf-c-4.9.2\nc_test4\tst_files.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\ZERO_CHECK.vcxproj">
+      <Project>{502B4EDA-3C8B-34C1-8144-8CD712201877}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\netcdf-c-4.9.2\msvc\liblib\netcdf.vcxproj">
+      <Project>{AF090F1C-BC00-33B8-B161-DC61224F4337}</Project>
+      <Name>netcdf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

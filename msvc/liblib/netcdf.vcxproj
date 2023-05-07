@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF090F1C-BC00-33B8-B161-DC61224F4337}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>netcdf</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">netcdf</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">netcdf</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">netcdf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">netcdf</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">netcdf</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">netcdf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">netcdf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">netcdf</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf.lib;hdf.lib;hdf5_cpp.lib;hdf5_hl_cpp.lib;zlib.lib;libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf_D.lib;hdf_D.lib;hdf5_cpp_D.lib;hdf5_hl_cpp_D.lib;hdf5_D.lib;hdf5_hl_D.lib;zlib.lib;libcurl-d_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf_D.lib;hdf_D.lib;hdf5_cpp_D.lib;hdf5_hl_cpp_D.lib;hdf5_D.lib;hdf5_hl_D.lib;zlib.lib;libcurl-d_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <ModuleDefinitionFile>netcdf.def</ModuleDefinitionFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Release";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf.lib;hdf.lib;hdf5_cpp.lib;hdf5_hl_cpp.lib;zlib.lib;libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Release";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf.lib;hdf.lib;hdf5_cpp.lib;hdf5_hl_cpp.lib;hdf5.lib;hdf5_hl.lib;zlib.lib;libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Release";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf.lib;hdf.lib;hdf5_cpp.lib;hdf5_hl_cpp.lib;hdf5.lib;hdf5_hl.lib;zlib.lib;libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <ModuleDefinitionFile>netcdf.def</ModuleDefinitionFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf.lib;hdf.lib;hdf5_cpp.lib;hdf5_hl_cpp.lib;zlib.lib;libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";netcdf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>mfhdf.lib;hdf.lib;hdf5_cpp.lib;hdf5_hl_cpp.lib;zlib.lib;libcurl_imp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(HDF4_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(HDF5_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)netcdf.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <StackReserveSize>40000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\liblib\nc_initialize.c" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dcopy.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dfile.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddim.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\datt.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dattinq.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dattput.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dattget.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\derror.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dvar.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dvarget.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dvarput.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dvarinq.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ddispatch.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nclog.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dstring.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dutf8.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dinternal.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\doffsets.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncuri.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nclist.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncbytes.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nchashmap.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nctime.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nclistmgr.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\utf8proc.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dpathmgr.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dutil.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\drc.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dauth.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dreadonly.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dnotnc4.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dnotnc3.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dinfermodel.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\daux.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dinstance.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dcrc32.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dcrc64.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncexhash.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncxcache.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncjson.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ds3util.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dparallel.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dgroup.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dvlen.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dcompound.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dtype.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\denum.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dopaque.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dfilter.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dv2i.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dhttp.obj" />
+    <Object Include="..\libdispatch\dispatch.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dreg.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\v1hpg.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\putget.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\attr.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc3dispatch.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc3internal.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\var.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dim.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncx.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\lookup3.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncio.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\memio.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\posixio.obj" />
+    <Object Include="..\libsrc\netcdf3.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\httpio.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4dispatch.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4attr.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4dim.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4grp.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4internal.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4type.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4var.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncfunc.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncindex.obj" />
+    <Object Include="..\libsrc4\netcdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4cache.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4hdf.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4info.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5file.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5attr.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5dim.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5grp.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5type.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5internal.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5create.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5open.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5var.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4mem.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\nc4memcb.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5dispatch.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5filter.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5set_format_compatibility.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf5debug.obj" />
+    <Object Include="..\libhdf5\netcdfhdf5.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\H5FDhttp.obj" />
+    <Object Include="..\libhdf4\netcdfhdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf4dispatch.obj" />
+    <Object Include="..\libhdf4\netcdfhdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf4file.obj" />
+    <Object Include="..\libhdf4\netcdfhdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf4func.obj" />
+    <Object Include="..\libhdf4\netcdfhdf4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\hdf4var.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\oc.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\daplex.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dapparse.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dapy.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\occompile.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\occurlfunctions.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ocdata.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ocdebug.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ocdump.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ocinternal.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ocnode.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ochttp.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ocread.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ocutil.obj" />
+    <Object Include="..\oc2\oc2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\xxdr.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\constraints.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dapcvt.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dapodom.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\daputil.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncdaperr.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cdf.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cache.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dapdump.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dapdebug.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dapattr.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncd2dispatch.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\getvara.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dceconstraints.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dcetab.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dceparse.obj" />
+    <Object Include="..\libdap2\dap2.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\dcelex.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4curlfunctions.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4fix.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4data.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4file.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4parser.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4meta.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4varx.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4dump.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4swap.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4chunk.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4printer.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4read.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4http.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4util.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4odom.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4cvt.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\d4debug.obj" />
+    <Object Include="..\libdap4\dap4.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncd4dispatch.obj" />
+    <Object Include="..\libncxml\ncxml.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncxml_tinyxml2.obj" />
+    <Object Include="..\libncxml\ncxml.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\tinyxml2.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zarr.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zattr.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zxcache.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zchunking.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zclose.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zcreate.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zcvt.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zdim.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zdispatch.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zfile.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zfilter.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zgrp.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zinternal.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zmap.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zmap_file.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zodom.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zopen.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zprov.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zsync.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ztype.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zutil.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zvar.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zwalk.obj" />
+    <Object Include="..\libnczarr\nczarr.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\zdebug.obj" />
+    <Object Include="..\libncpoco\ncpoco.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\ncpoco.obj" />
+    <Object Include="..\libncpoco\ncpoco.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\cp_win32.obj" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

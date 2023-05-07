@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5CA632FE-84A9-3DD2-BE21-92B5BADE2ABD}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>dispatch</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dispatch</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">dispatch</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">dispatch</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dispatch</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">dispatch</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">dispatch</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dispatch</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dispatch</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(HDF5_DIR)\msvc\src;..\..\..\$(HDF5_DIR)\src\H5FDsubfiling;..\..\..\$(HDF5_DIR)\hl\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;ENABLE_SET_LOG_LEVEL;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB=1;RELAX_COORD_BOUND;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\include;..\..\include;..\..\oc2;..\..\libsrc;..\..\..\$(HDF4_DIR)\mfhdf\libsrc;..\..\..\$(JPEG_DIR);..\..\..\$(HDF5_DIR)\src;..\..\..\$(CURL_DIR)\include;..\..\..\$(ZLIB_DIR);..\;..\..\libdispatch\..\libnczarr;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libdispatch\dcopy.c" />
+    <ClCompile Include="..\..\libdispatch\dfile.c" />
+    <ClCompile Include="..\..\libdispatch\ddim.c" />
+    <ClCompile Include="..\..\libdispatch\datt.c" />
+    <ClCompile Include="..\..\libdispatch\dattinq.c" />
+    <ClCompile Include="..\..\libdispatch\dattput.c" />
+    <ClCompile Include="..\..\libdispatch\dattget.c" />
+    <ClCompile Include="..\..\libdispatch\derror.c" />
+    <ClCompile Include="..\..\libdispatch\dvar.c" />
+    <ClCompile Include="..\..\libdispatch\dvarget.c" />
+    <ClCompile Include="..\..\libdispatch\dvarput.c" />
+    <ClCompile Include="..\..\libdispatch\dvarinq.c" />
+    <ClCompile Include="..\..\libdispatch\ddispatch.c" />
+    <ClCompile Include="..\..\libdispatch\nclog.c" />
+    <ClCompile Include="..\..\libdispatch\dstring.c" />
+    <ClCompile Include="..\..\libdispatch\dutf8.c" />
+    <ClCompile Include="..\..\libdispatch\dinternal.c" />
+    <ClCompile Include="..\..\libdispatch\doffsets.c" />
+    <ClCompile Include="..\..\libdispatch\ncuri.c" />
+    <ClCompile Include="..\..\libdispatch\nclist.c" />
+    <ClCompile Include="..\..\libdispatch\ncbytes.c" />
+    <ClCompile Include="..\..\libdispatch\nchashmap.c" />
+    <ClCompile Include="..\..\libdispatch\nctime.c" />
+    <ClCompile Include="..\..\libdispatch\nc.c" />
+    <ClCompile Include="..\..\libdispatch\nclistmgr.c" />
+    <ClInclude Include="..\..\libdispatch\utf8proc.h" />
+    <ClCompile Include="..\..\libdispatch\utf8proc.c" />
+    <ClCompile Include="..\..\libdispatch\dpathmgr.c" />
+    <ClCompile Include="..\..\libdispatch\dutil.c" />
+    <ClCompile Include="..\..\libdispatch\drc.c" />
+    <ClCompile Include="..\..\libdispatch\dauth.c" />
+    <ClCompile Include="..\..\libdispatch\dreadonly.c" />
+    <ClCompile Include="..\..\libdispatch\dnotnc4.c" />
+    <ClCompile Include="..\..\libdispatch\dnotnc3.c" />
+    <ClCompile Include="..\..\libdispatch\dinfermodel.c" />
+    <ClCompile Include="..\..\libdispatch\daux.c" />
+    <ClCompile Include="..\..\libdispatch\dinstance.c" />
+    <ClCompile Include="..\..\libdispatch\dcrc32.c" />
+    <ClInclude Include="..\..\libdispatch\dcrc32.h" />
+    <ClCompile Include="..\..\libdispatch\dcrc64.c" />
+    <ClCompile Include="..\..\libdispatch\ncexhash.c" />
+    <ClCompile Include="..\..\libdispatch\ncxcache.c" />
+    <ClCompile Include="..\..\libdispatch\ncjson.c" />
+    <ClCompile Include="..\..\libdispatch\ds3util.c" />
+    <ClCompile Include="..\..\libdispatch\dparallel.c" />
+    <ClCompile Include="..\..\libdispatch\dgroup.c" />
+    <ClCompile Include="..\..\libdispatch\dvlen.c" />
+    <ClCompile Include="..\..\libdispatch\dcompound.c" />
+    <ClCompile Include="..\..\libdispatch\dtype.c" />
+    <ClCompile Include="..\..\libdispatch\denum.c" />
+    <ClCompile Include="..\..\libdispatch\dopaque.c" />
+    <ClCompile Include="..\..\libdispatch\dfilter.c" />
+    <ClCompile Include="..\..\libdispatch\dv2i.c" />
+    <ClCompile Include="..\..\libdispatch\dhttp.c" />
+    <ClCompile Include="..\..\libdispatch\dreg.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
