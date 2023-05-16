@@ -382,3 +382,7 @@ nclistelemremove
 nclistunique
 nclistclone
 nclistextract
+nc_open_mem
+nc_create_mem
+nc_open_memio
+nc_close_memio
